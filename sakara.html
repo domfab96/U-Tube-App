@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Feed Your Spirit! </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Libre+Bodoni&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Libre+Bodoni&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+      div{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .shop-items{
+        font-family:Garamond, Bodoni;
+        font-size: 58px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 26px;
+      }
+      .shop-item-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .shop-item-list{
+        width: 230px;
+
+      }
+      .item1{
+        width:230px ;
+      }
+      .item-name{
+        color: black;
+        font-size: 27px;
+        font-family:Garamond, Bodoni ;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        font-weight: normal;
+      }
+      .item-description{
+        font-size: 16px;
+        font-family: Source-sans-pro, sans-serif;
+        color: black;
+        font-weight: 350;
+        margin-bottom: 4px;
+        line-height: 25px;
+      }
+      .item-price{
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: 300;
+      }
+      .sustainability-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .item{
+        width: 390px;
+        margin-bottom: 15px;
+      }
+      .item1-image, 
+      .item2-image,
+      .item3-image{
+        width: 100%;
+
+      }
+      .sustainability-item-description{
+        font-size: 30px;
+        font-family:Garamond, Bodoni  ;
+        margin-top: 12px;
+     
+      }
+      .Sustainability{
+        display: flex;
+        flex-direction: row;
+        
+      }
+      .sustainability-heading{
+        font-size: 55px;
+        font-family:Garamond, Bodoni  ;
+        margin-right: 300px;
+      }
+      .sustainability-quote{
+        font-size: 35px;
+      }
+      .shop-button{
+        margin-left: 450px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding: 40px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        border-width: 1px;
+        font-family: Roboto;
+        cursor: pointer;
+      }
+      .shop-button:hover{
+        background-color: rgb(12, 12, 12);
+        color: white;
+        transition: 0.4s;
+
+      }
+      .press-text1{
+        color:rgb(91, 171, 93);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-top:80px ;
+        font-size: 16px;
+
+      }
+      .press-punctuation{
+        font-size: 76px;
+        text-align: center;
+        margin-top: 25px;
+        font-weight: 600;
+      }
+      .press-text2{
+        text-align: center;
+        font-size: 35px;
+        width: 700px;
+        padding-left: 310px;
+        color: rgb(56, 55, 55);
+        margin-bottom: 40px;
+        
+      }
+      .press-text3{
+        text-align: center;
+        font-size: 33px;
+        color:rgb(56, 55, 55) ;
+
+      }
+      .philosophy{
+        background-color: rgb(90, 167, 90);
+        height: 270px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .philosophy-heading{
+        font-size: 43px;
+        margin-left: 100px;
+        width: 500px;
+        margin-right: 2px;
+        font-family:Garamond, Bodoni  ;
+      }
+      .philosophy-quote{
+        font-size: 35px;
+        margin-left: 60px;
+        width: 960px;
+        font-weight: 200;
+      }
+      .lifestyle{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .lifestyle1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .lifestyle-sakara{
+        text-align: center;
+        color:rgb(91, 171, 93);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        margin-bottom: 20px;
+        
+      }
+      .lifestyle-signature{
+        font-family:Garamond, Bodoni  ;
+        font-size: 50px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-weight: 400;
+        margin-bottom: 19px;
+      }
+      .lifestyle-quote{
+        font-size: 17px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing:1px;
+        margin-bottom: 30px;
+
+      }
+      .learn-more-button{
+        padding-left: 78px;
+        padding-right: 78px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        border-width: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .learn-more-button:hover{
+        background-color: rgb(12, 12, 12);
+        color: white;
+        transition: 0.4s;
+      }
+      .menu-button{
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        border-width: 1px;
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+      .menu-button:hover{
+        background-color: rgb(12, 12, 12);
+        color: white;
+        transition: 0.4s;
+      }
+      .lifestyle2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+      }
+      .lifestyle-image1{
+        background-color: lightblue;    
+      }
+      .lifestyle-image2{
+        background-color: lightpink;
+      }
+      .lifestyle-image3{
+        background-color: lightblue;
+      }
+      .lifestyle-image1-content{
+      width: 200px;
+      }
+      .lifestyle-image2-content{
+
+      }
+      .lifestyle-image3-content{
+
+      }
+    </style>
+  </head>
+  <body style="
+  
+  ">
+    <div class="lifestyle">
+      <div class="lifestyle1">
+        <div>
+          <p class="lifestyle-sakara">SAKARA</p>
+          <p class="lifestyle-signature">Signature Nutrition Program</p>
+          <p class="lifestyle-quote">Nutritionally-designed, plant-rich organic meals delivered to your door, ready-to-eat.</p>
+        </div>
+        <div>
+          <button class="learn-more-button">LEARN MORE</button>
+          <button class="menu-button">SEE NEXT WEEK'S MENU</button>
+        </div>
+      </div>
+      <div class="lifestyle2">
+        <div class="lifestyle-image1"> 1<img class="lifestyle-image2" src="lifestyle-image/lifestyle1.webp" alt=""></div>
+        <div class="lifestyle-image2">2<img class="lifestyle-image2-content" src="" alt=""></div>
+        <div class="lifestyle-image3">3<img class="lifestyle-image3-content" src="" alt=""></div>
+      </div>
+    </div>
+    <div class="philosophy">
+      <div class="philosophy-heading">
+        <p> <em> Our</em> Nutrition Philosophy</p>
+     </div>
+     <div class="philosophy-quote">
+        <p>We believe in a whole-food, plant-rich diet. Our proprietary science-backed, nutrition philosophy delivers life-transforming results</p>
+      </div>
+    </div>
+    <div class="shop-items">
+      Best-Selling Wellness Essential
+    </div>
+    
+    <div class="shop-item-content" >
+      <div class="shop-item-list">
+        <img class="item1" src="sakara-shop-items\Home_Featured_Hover_576x658_22c7872e-d82d-447b-8985-0ee222dd8a6b.webp" alt="">
+        <div class="item-name"><p>Energy Efferverscents</p></div>
+        <div class="item-description-container"><p class="item-description">Help revitalize your body and mind and support mental focus without caffeine with our NEW, clean, water-activated functional powder.</p>
+        </div>
+        <p class="item-price">$45</p>
+      </div>
+      <div class="shop-item-list">
+        <img class="item1" src="sakara-shop-items\20220427_SK-017_TRAVEL_BUNDLE_088_Final_HP_Featured_Products_Desktop_576x658_a2d82e1c-a1a9-4c2f-a210-7622e5b24c89.webp" alt="">
+        <div class="item-name"><p>The Travel Collection</p></div>
+        <div ><p class="item-description">Our TSA-friendly collection of best-selling travel essemtials was designed to help you maintain your wellness rituals and feel your best, everywhere.</p>
+        </div>
+        <p class="item-price">$190</p>
+      </div>
+      <div class="shop-item-list">
+        <img class="item1" src="sakara-shop-items\PDP-MSP-HOVER.webp" alt="">
+        <div class="item-name"><p>Metabolism Super Powder</p></div>
+        <div><p class="item-description"> Fire your metabolism, curb sugar cravings, and ease bloat with this delicious raw cacao super poder</p>
+        </div>
+        <p class="item-price">$45</p>
+      </div>
+      <div class="shop-item-list">
+        <img class="item1" src="sakara-shop-items\202203032_SK-040_Supplements_TheFoundation_00187_Final_HP_Featured_Products_Desktop_576x658_02e73ba0-9efa-46b6-9bd4-39401be456bf.webp" alt="">
+        <div class="item-name"><p>Sakara Rx: The Foundation</p></div>
+        <div class="item-description-container"><p class="item-description">Fill nutrients caused by diet, stress, and lifestyle with these clean., curated daily supplement packs.</p>
+        </div>
+        <p class="item-price">$105</p>
+      </div>
+      <div class="shop-item-list">
+        <img class="item1" src="sakara-shop-items\20220301_SBR_MetabolismProteinSuperBar_IngredientStillLife_0320_Final_1__HP_Featured_Products_Desktop_576x658_f6c28c03-0896-4558-95f2-715772bae68a.webp" alt="">
+       <div class="item-name"><p> Metabolism Pro Super Bar</p></div>
+        <div><p class="item-description"> Rev your metabolism and your inner fire with this and funtional bar, madee whole food ingredients.</p>
+        </div>
+        <p class="item-price">$78</p>
+      </div>
+    </div>
+    <div>
+      <button class="shop-button"> SHOP ALL WELLNESS ESSENTIALS</button>
+      <hr>
+    <div class="press-text1"> IN THE PRESS</div>   
+    <div class="press-punctuation">“</div>
+    <div class="press-text2"><p>For super nutrition, the chic and health conscious flock to Sakara</p></div>    
+    <div class="press-text3"><p>VOGUE </p></div>
+    </div>
+    <div class="Sustainability">
+      <div>
+        <p class="sustainability-heading">Sustainability at <em>Sakara</em></p>
+      </div>
+      <div>
+        <p class="sustainability-quote">We care deeply about Mother Earth and are committed to making the right choices for the health of our clients and the environment.</p>
+      </div>
+    </div>
+    <div class="sustainability-item">
+      <div class="item">
+        <img class="item1-image" src="sustainability-image/Sustainability-Eat-plany.jpg  ">
+        <p class="sustainability-item-description">Eating Plants to Save the Planet</p>
+      </div>
+      <div class="item">
+        <img class="item2-image" src="sustainability-image/Sustainability-choose-thoughtful.jpg" alt="">
+        <p class="sustainability-item-description">Choosing Thoughtful Packaging</p>
+      </div>
+      <div class="item">
+        <img class="item3-image" src="sustainability-image/Sustainability-Minimize-toxic.jpg" alt="">
+        <p class="sustainability-item-description">Minimizing Toxic Food Waste</p>
+      </div>
+    </div>
+    
+  </body>
+</html>
